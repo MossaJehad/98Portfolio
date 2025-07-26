@@ -21,9 +21,9 @@ function changeImage()
 	const imgElement = document.getElementById('sound');
 
 	if (isMuted)
-		imgElement.src = "/assets/rays.png";
+		imgElement.src = "https://i.ibb.co/WvVHbcB1/rays.png";
 	else
-		imgElement.src = "/assets/mute.png";
+		imgElement.src = "https://i.ibb.co/Kx8g4Gx2/mute.png";
 	isMuted = !isMuted;
 }
 
@@ -31,7 +31,7 @@ function playSound()
 {
 	if(!isMuted)
 	{
-		const audio = new Audio('/assets/chimes-win98.mp3');
+		const audio = new Audio('https://docs.google.com/uc?export=download&id=13NCiWmhfhGbaVgBilNby5wZnanm-0Wg5');
 		audio.play();
 	}
 }
@@ -261,7 +261,7 @@ function portfolio()
 							<div class="title-bar">
 								<div class="title-bar-text">C++ Movie Information App</div>
 							</div>
-							<img src="../assets/SW1.png" alt="C++ Movie Information App" style="width: 100%; height: auto;" />
+							<img src="https://i.ibb.co/0pjjvF7L/SW1.png" alt="C++ Movie Information App" style="width: 100%; height: auto;" />
 							<p>A terminal-based app that fetches and displays movie details using C++ and file I/O.</p>
 							<a
 							href="https://github.com/MossaJehad/Movie-information-Cpp"
@@ -276,7 +276,7 @@ function portfolio()
 							<div class="title-bar">
 								<div class="title-bar-text">AABU Extension – JS Vanilla</div>
 							</div>
-							<img src="../assets/SW2.png" alt="AABU Extension – JS Vanilla" style="width: 100%; height: auto;" />
+							<img src="https://i.ibb.co/NnmNLmvy/SW2.png" alt="AABU Extension – JS Vanilla" style="width: 100%; height: auto;" />
 							<p>Browser extension built with vanilla JavaScript to enhance AABU’s online platform.</p>
 							<a
 							href="https://github.com/MossaJehad/AABU-Portal-Enhancer-Extension"
@@ -291,7 +291,7 @@ function portfolio()
 							<div class="title-bar">
 								<div class="title-bar-text">so_long – 42 Project</div>
 							</div>
-							<img src="../assets/SW3.png" alt="so_long – 42 Project" style="width: 100%; height: auto;" />
+							<img src="https://i.ibb.co/X145kRp/SW3.png" alt="so_long – 42 Project" style="width: 100%; height: auto;" />
 							<p>2D maze game built with C and MiniLibX, featuring tile-based rendering and player movement.</p>
 							<a
 							href="https://github.com/MossaJehad/so_long"
@@ -306,7 +306,7 @@ function portfolio()
 							<div class="title-bar">
 								<div class="title-bar-text">minitalk – 42 Project</div>
 							</div>
-							<img src="../assets/SW4.png" alt="minitalk – 42 Project" style="width: 100%; height: auto;" />
+							<img src="https://i.ibb.co/yBQSVLWT/SW4.png" alt="minitalk – 42 Project" style="width: 100%; height: auto;" />
 							<p>Client-server communication app using UNIX signals to send messages in C.</p>
 							<a
 							href="https://github.com/MossaJehad/minitalk"
@@ -325,7 +325,7 @@ function portfolio()
 							<div class="title-bar">
 								<div class="title-bar-text">NestSeek</div>
 							</div>
-							<img src="../assets/Design1.jpeg" alt="NestSeek" style="width: 100%; height: auto;" />
+							<img src="https://i.ibb.co/C5BPqK5g/Design1.jpg" alt="NestSeek" style="width: 100%; height: auto;" />
 							<p>User-friendly web app for browsing and filtering homes with ease.</p>
 							<a
 							href="https://www.behance.net/gallery/186774993/NestSeek"
@@ -340,7 +340,7 @@ function portfolio()
 							<div class="title-bar">
 								<div class="title-bar-text">Responsive Phone Shop</div>
 							</div>
-							<img src="../assets/Design2.jpeg" alt="Responsive Phone Shop" style="width: 100%; height: auto;" />
+							<img src="https://i.ibb.co/zTTQKgf5/Design2.jpg" alt="Responsive Phone Shop" style="width: 100%; height: auto;" />
 							<p>Fully responsive online phone store with modern UI and mobile-first design.</p>
 							<a
 							href="https://www.behance.net/gallery/187716993/Responsive-Phone-Shop"
@@ -355,7 +355,7 @@ function portfolio()
 							<div class="title-bar">
 								<div class="title-bar-text">Financial Solutions Website</div>
 							</div>
-							<img src="../assets/Design3.png" alt="Financial Solutions Website" style="width: 100%; height: auto;" />
+							<img src="https://i.ibb.co/XMsXSyv/Design3.png" alt="Financial Solutions Website" style="width: 100%; height: auto;" />
 							<p>Educational platform focused on financial literacy and personal money management tools.</p>
 							<a
 							href="https://www.behance.net/gallery/209978789/Ledger-Learn-Financial-Solutions-Website"
@@ -387,17 +387,17 @@ function contact()
 					<div class="window-body">
 						<div style="display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 16px;">
 							<div style="display: flex; align-items: center; gap: 8px;">
-								<img src="/assets/mail.png" alt="Email Icon" style="width: 16px; height: 16px;" />
+								<img src="https://i.ibb.co/FL5gV44k/mail.png" alt="Email Icon" style="width: 16px; height: 16px;" />
 								<a href="mailto:Moosa.Jehad65@gmail.com" style="font-size: 14px;">Moosa.Jehad65@gmail.com</a>
 								||
 								<a href="mailto:Mossah.dev@gmail.com" style="font-size: 14px;">Mossah.dev@gmail.com</a>
 							</div>
 							<div style="display: flex; align-items: center; gap: 8px;">
-								<img src="/assets/phone-call.png" alt="Phone Icon" style="width: 16px; height: 16px;" />
+								<img src="https://i.ibb.co/Yx2FM90/phone-call.png" alt="Phone Icon" style="width: 16px; height: 16px;" />
 								<a href="tel:+962799825092" style="font-size: 14px;">+962 799-825-092</a>
 							</div>
 							<div style="display: flex; align-items: center; gap: 8px;">
-								<img src="/assets/location.png" alt="Location Icon" style="width: 16px; height: 16px;" />
+								<img src="https://i.ibb.co/5xjB9fDF/location.png" alt="Location Icon" style="width: 16px; height: 16px;" />
 								<a style="font-size: 14px;" href="https://maps.app.goo.gl/a4kGZ5CZ3PxHxAs96" target="_blank">Amman, Jordan</a>
 							</div>
 						</div>
@@ -436,19 +436,19 @@ function contact()
 					<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
 						<button style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items:center;">
 							<a href="https://github.com/MossaJehad/" target="_blank">GitHub</a> &nbsp;&nbsp;
-							<img src="/assets/github.svg" alt="GitHub Icon" style="width: 16px; height: 16px;" />
+							<img src="https://i.ibb.co/21CN2xzQ/github.png" alt="GitHub Icon" style="width: 16px; height: 16px;" />
 						</button>
 						<button style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items:center;">
 							<a href="https://www.linkedin.com/in/mossa-jehad/" target="_blank">LinkedIn</a> &nbsp;&nbsp;
-							<img src="/assets/linkedin.png" alt="LinkedIn Icon" style="width: 16px; height: 16px;" />
+							<img src="https://i.ibb.co/zVLSzV4j/linkedin.png" alt="LinkedIn Icon" style="width: 16px; height: 16px;" />
 						</button>
 						<button style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items:center;">
 							<a href="https://x.com/mossa_jehad" target="_blank">Twitter</a> &nbsp;&nbsp;
-							<img src="/assets/twitter.png" alt="Twitter Icon" style="width: 16px; height: 16px;" />
+							<img src="https://i.ibb.co/9H8zq6GK/twitter.png" alt="Twitter Icon" style="width: 16px; height: 16px;" />
 						</button>
 						<button style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items:center;">
 							<a href="https://leetcode.com/u/Mossa_Jehad" target="_blank">LeetCode</a> &nbsp;&nbsp;
-							<img src="/assets/www.png" alt="LeetCode Icon" style="width: 16px; height: 16px;" />
+							<img src="https://i.ibb.co/WvLkRVdc/www.png" alt="LeetCode Icon" style="width: 16px; height: 16px;" />
 						</button>
 					</div>
 					</div>
