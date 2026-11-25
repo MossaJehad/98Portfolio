@@ -91,14 +91,27 @@ input, button, label
 #applications
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	gap: 10px;
+	min-width: 0;
+	min-height: 0;
+	overflow: hidden;
+	padding: 10px;
 }
 
 .window
 {
 	width: 100%;
+}
+
+.desktop-icon
+{
+	display: block;
+	width: 46px;
+	height: 46px;
+	object-fit: contain;
+	image-rendering: pixelated;
 }
 
 .labels
@@ -178,6 +191,22 @@ input, button, label
 #default-window
 {
 	display: none;
+	flex-direction: column;
+	width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+#default-window.is-maximized
+{
+	height: 100%;
+}
+
+#default-window > .window-body
+{
+	overflow: auto;
+	flex: 1 1 auto;
+	min-height: 0;
 }
 
 .gridCards
@@ -252,4 +281,308 @@ h4
 .content > div
 {
 	margin-top: 10px;
+}
+
+/* Contact form & social links */
+.contact-feedback
+{
+	margin-top: 8px;
+	font-size: 13px;
+	min-height: 18px;
+}
+
+.contact-feedback.is-error
+{
+	color: #a00000;
+}
+
+.contact-feedback.is-success
+{
+	color: #006400;
+}
+
+.social-link-btn
+{
+	width: 100%;
+	padding: 0;
+}
+
+.social-link-btn > a
+{
+	width: 100%;
+	height: 100%;
+	padding: 4px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Authentic Windows 98 Minesweeper */
+.ms-wrapper
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 4px 10px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.ms-toolbar
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	width: 100%;
+}
+
+.ms-toolbar button
+{
+	min-width: 0;
+	padding: 3px 10px;
+	font-size: 13px;
+}
+
+.ms-toolbar button.is-active
+{
+	box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+	background-color: #d4d4d4;
+	font-weight: bold;
+}
+
+.ms-marks-toggle
+{
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 2px 4px;
+}
+
+.ms-frame
+{
+	background-color: #c0c0c0;
+	padding: 8px;
+	border-top: 3px solid #ffffff;
+	border-left: 3px solid #ffffff;
+	border-right: 3px solid #808080;
+	border-bottom: 3px solid #808080;
+	box-shadow: 1px 1px 0 #000000;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.ms-header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+	padding: 5px 7px;
+	background-color: #c0c0c0;
+	border-top: 2px solid #808080;
+	border-left: 2px solid #808080;
+	border-right: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+.ms-led
+{
+	position: relative;
+	background-color: #000000;
+	color: #ff1e1e;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: 2px;
+	padding: 4px 6px 3px 8px;
+	min-width: 58px;
+	text-align: right;
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	text-shadow: 0 0 4px rgba(255, 0, 0, 0.55);
+}
+
+.ms-face-btn
+{
+	min-width: 0 !important;
+	min-height: 0 !important;
+	width: 34px;
+	height: 34px;
+	padding: 0 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #c0c0c0;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-right: 2px solid #808080;
+	border-bottom: 2px solid #808080;
+	box-shadow: none !important;
+}
+
+.ms-face-btn:active
+{
+	border-top: 2px solid #808080;
+	border-left: 2px solid #808080;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	padding: 1px 0 0 1px !important;
+}
+
+.ms-face-btn img
+{
+	width: 24px;
+	height: 24px;
+	display: block;
+	pointer-events: none;
+}
+
+.ms-board-scroll
+{
+	max-width: 100%;
+	overflow: auto;
+	border-top: 3px solid #808080;
+	border-left: 3px solid #808080;
+	border-right: 3px solid #ffffff;
+	border-bottom: 3px solid #ffffff;
+	background-color: #808080;
+}
+
+#ms-board
+{
+	display: grid;
+	gap: 0;
+	background-color: #808080;
+	width: max-content;
+}
+
+.ms-cell
+{
+	min-width: 0 !important;
+	min-height: 0 !important;
+	width: var(--ms-cell-size, 28px);
+	height: var(--ms-cell-size, 28px);
+	padding: 0 !important;
+	margin: 0 !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #c0c0c0;
+	border-top: 3px solid #ffffff;
+	border-left: 3px solid #ffffff;
+	border-right: 3px solid #808080;
+	border-bottom: 3px solid #808080;
+	font-family: "Arial Black", "Segoe UI", Tahoma, sans-serif;
+	font-weight: 900;
+	font-size: calc(var(--ms-cell-size, 28px) * 0.62);
+	line-height: 1;
+	cursor: pointer;
+	outline: none !important;
+}
+
+.ms-cell:focus-visible
+{
+	outline: 1px dotted #000000 !important;
+	outline-offset: -3px;
+}
+
+.ms-cell.is-pressed:not(.is-revealed)
+{
+	border: 1px solid #808080;
+	background-color: #bdbdbd;
+}
+
+.ms-cell.is-revealed
+{
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: none;
+	border-bottom: none;
+	background-color: #c0c0c0;
+	cursor: default;
+}
+
+.ms-cell.is-revealed.is-chordable
+{
+	cursor: pointer;
+}
+
+.ms-cell.is-detonated
+{
+	background-color: #ff0000 !important;
+}
+
+.ms-cell img
+{
+	width: 76%;
+	height: 76%;
+	display: block;
+	pointer-events: none;
+	image-rendering: pixelated;
+}
+
+.ms-cell.is-question
+{
+	color: #000000;
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+}
+
+/* Classic Win98 Minesweeper number palette */
+.ms-n1 { color: #0000ff; }
+.ms-n2 { color: #008000; }
+.ms-n3 { color: #ff0000; }
+.ms-n4 { color: #000080; }
+.ms-n5 { color: #800000; }
+.ms-n6 { color: #008080; }
+.ms-n7 { color: #000000; }
+.ms-n8 { color: #808080; }
+
+.ms-footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+	text-align: center;
+}
+
+.ms-status
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	min-height: 20px;
+}
+
+.ms-status.is-win
+{
+	color: #006400;
+}
+
+.ms-status.is-lose
+{
+	color: #b00000;
+}
+
+.ms-hint
+{
+	font-size: 12px;
+	color: #404040;
 }
